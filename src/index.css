@@ -694,9 +694,7 @@ blockquote {
   background: var(--ink);
 }
 .footer-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  
   width: min(1200px, calc(100% - 64px));
   margin: auto;
   padding: 44px 0 35px;
