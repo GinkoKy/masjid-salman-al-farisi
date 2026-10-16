@@ -1427,3 +1427,130 @@ blockquote {
     white-space: normal;
   }
 }
+
+
+/* Program Kerja */
+.section-program {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 5px;
+  background: var(--card-bg, #ffffff);
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    border-color 250ms ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color, #23845b);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 7%);
+}
+
+.program-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.program-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  color: var(--primary-color, #23845b);
+  background: var(--primary-soft, #eaf5ee);
+}
+
+.program-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted-color, #9ca3af);
+}
+
+.program-category {
+  margin-bottom: 10px;
+  color: var(--primary-color, #23845b);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.program-card h3 {
+  margin: 0 0 12px;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--heading-color, #173b2d);
+}
+
+.program-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--text-color, #626b65);
+}
+
+.program-banner {
+  margin-top: 36px;
+}
+
+@media (max-width: 900px) {
+  .program-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .program-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-program {
+    padding-top: 44px;
+    padding-bottom: 56px;
+  }
+
+  .program-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .program-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .program-card h3 {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .program-card {
+    transition: none;
+  }
+
+  .program-card:hover {
+    transform: none;
+  }
+}

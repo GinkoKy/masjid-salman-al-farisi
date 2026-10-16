@@ -24,6 +24,7 @@ export const navigation = [
   { label: "Struktur Takmir", to: "/struktur-organisasi" },
   { label: "Kegiatan & Dokumentasi", to: "/kegiatan" },
   { label: "Agenda & Event", to: "/agenda" },
+  { label: "Program Kerja", to: "/program" },
 ];
 
 export const images = {

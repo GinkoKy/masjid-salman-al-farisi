@@ -1,14 +1,16 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
-import MainLayout from './layouts/MainLayout'
-import Beranda from './pages/Beranda'
-import TentangKami from './pages/TentangKami'
-import StrukturOrganisasi from './pages/StrukturOrganisasi'
-import Kegiatan from './pages/Kegiatan'
-import Agenda from './pages/Agenda'
+import { Navigate, Route, Routes } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Beranda from "./pages/Beranda";
+import TentangKami from "./pages/TentangKami";
+import StrukturOrganisasi from "./pages/StrukturOrganisasi";
+import Kegiatan from "./pages/Kegiatan";
+import Agenda from "./pages/Agenda";
 import { agendaPageData } from "./data/agenda";
-import Donasi from './pages/Donasi'
-import TidakDitemukan from './pages/TidakDitemukan'
-import { images } from './data/site'
+import Donasi from "./pages/Donasi";
+import TidakDitemukan from "./pages/TidakDitemukan";
+import { images } from "./data/site";
+import Program from "./pages/Program";
+import { programPageData } from "./data/program";
 
 export default function App() {
   return (
@@ -19,10 +21,11 @@ export default function App() {
         <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
         <Route path="/kegiatan" element={<Kegiatan />} />
         <Route path="/agenda" element={<Agenda {...agendaPageData} />} />
+        <Route path="/program" element={<Program {...programPageData} />} />
         <Route path="/donasi" element={<Donasi />} />
         <Route path="/beranda" element={<Navigate to="/" replace />} />
         <Route path="*" element={<TidakDitemukan />} />
       </Route>
     </Routes>
-  )
+  );
 }
