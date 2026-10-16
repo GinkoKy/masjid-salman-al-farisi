@@ -5,6 +5,7 @@ import TentangKami from './pages/TentangKami'
 import StrukturOrganisasi from './pages/StrukturOrganisasi'
 import Kegiatan from './pages/Kegiatan'
 import Agenda from './pages/Agenda'
+import { agendaPageData } from "./data/agenda";
 import Donasi from './pages/Donasi'
 import TidakDitemukan from './pages/TidakDitemukan'
 import { images } from './data/site'
@@ -17,7 +18,7 @@ export default function App() {
         <Route path="/tentang-kami" element={<TentangKami />} />
         <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
         <Route path="/kegiatan" element={<Kegiatan />} />
-        <Route path="/agenda" element={<Agenda />} />
+        <Route path="/agenda" element={<Agenda {...agendaPageData} />} />
         <Route path="/donasi" element={<Donasi />} />
         <Route path="/beranda" element={<Navigate to="/" replace />} />
         <Route path="*" element={<TidakDitemukan />} />

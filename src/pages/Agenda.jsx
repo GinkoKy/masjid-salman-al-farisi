@@ -3,40 +3,42 @@ import { Link } from "react-router-dom";
 import SectionHeading from "../components/SectionHeading";
 import AgendaCards from "../components/AgendaCards";
 
-export default function Agenda() {
+export default function Agenda({ hero, section, agendas, banner }) {
   return (
     <>
       <section className="page-hero">
         <div className="container">
           <span className="eyebrow-pill">
-            <span /> KALENDER DAKWAH & KHIDMAH KAMPUS
+            <span /> {hero.eyebrow}
           </span>
-          <h1>Agenda & Program</h1>
-          <p>
-            Informasi kajian, amalan berjamaah, kegiatan sosial, dan gotong
-            royong takmir.
-          </p>
+
+          <h1>{hero.title}</h1>
+
+          <p>{hero.description}</p>
         </div>
       </section>
+
       <section className="section section-agenda-preview">
         <div className="container">
           <SectionHeading
-            eyebrow="PROGRAM TERJADWAL"
-            title="Agenda Masjid Salman Al-Farisi"
-            description="Jadwal berikut merupakan konten awal dari mockup dan perlu dikonfirmasi oleh pengurus."
+            eyebrow={section.eyebrow}
+            title={section.title}
+            description={section.description}
           />
-          <AgendaCards />
+
+          <AgendaCards agendas={agendas} />
+
           <div className="mission-banner agenda-banner">
             <CalendarDays />
+
             <div>
-              <strong>Ingin mengusulkan kegiatan?</strong>
-              <p>
-                Hubungi pengurus melalui saluran resmi setelah informasinya
-                ditambahkan.
-              </p>
+              <strong>{banner.title}</strong>
+              <p>{banner.description}</p>
             </div>
-            <Link to="/donasi">
-              <MessageCircle size={14} /> Hubungi kami
+
+            <Link to={'https://wa.me/6285600201973'}>
+              <MessageCircle size={14} />
+              {banner.buttonText}
             </Link>
           </div>
         </div>
