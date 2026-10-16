@@ -1566,8 +1566,8 @@ blockquote {
   inset: 0;
   background-image: url("/src/assets/images/islamic-pattern.svg");
   background-repeat: repeat;
-  background-size: 300px;
-  opacity: 0.15;
+  background-size: 400px;
+  opacity: 0.2;
   pointer-events: none;
   z-index: -1;
 }
