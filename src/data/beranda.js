@@ -11,7 +11,7 @@ export const berandaData = {
     kicker: 'EPISENTRUM SPIRITUALITAS SIVITAS AKADEMIKA FT UNNES',
     title: 'Memadukan Nilai Spiritualitas Islam',
     description:
-      'Pusat Ibadah, Pembinaan, dan Pengabdian Sivitas Akademika Fakultas Teknik Universitas Negeri Semarang. Terbuka bagi dosen, tenaga kependidikan, mahasiswa, dan masyarakat umum.',
+      'Pusat Ibadah, Pembinaan, dan Pengabdian Sivitas Akademika Fakultas Teknik Universitas Negeri Semarang. Terbuka bagi dosen, tenaga kependidikan, mahasiswa, dan masyarakat umum. Bersama memakmurkan masjid, membangun generasi bertauhid dan berilmu rekayasa.',
 
     primaryButton: {
       label: 'Lihat Agenda & Kegiatan',

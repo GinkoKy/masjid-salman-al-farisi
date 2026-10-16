@@ -36,7 +36,6 @@ export default function Beranda() {
                 to={hero.primaryButton.to}
               >
                 {hero.primaryButton.label}
-                <ArrowRight size={16} />
               </Link>
 
               <Link
@@ -44,7 +43,6 @@ export default function Beranda() {
                 to={hero.secondaryButton.to}
               >
                 {hero.secondaryButton.label}
-                <ArrowRight size={16} />
               </Link>
             </div>
           </div>
