@@ -8,10 +8,10 @@ import {
 
 export const berandaData = {
   hero: {
-    kicker: 'EPISENTRUM SPIRITUALITAS SIVITAS AKADEMIKA FT UNNES',
-    title: 'Memadukan Nilai Spiritualitas Islam',
+    kicker: 'Rumah Ibadah, Rumah Ilmu, dan Rumah Ukhuwah bagi Seluruh Civitas FT UNNES',
+    title: 'Pusat Ibadah, Pembinaan, dan Pengabdian',
     description:
-      'Pusat Ibadah, Pembinaan, dan Pengabdian Sivitas Akademika Fakultas Teknik Universitas Negeri Semarang. Terbuka bagi dosen, tenaga kependidikan, mahasiswa, dan masyarakat umum. Bersama memakmurkan masjid, membangun generasi bertauhid dan berilmu rekayasa.',
+      'Terbuka bagi dosen, pegawai, mahasiswa, dan masyarakat umum. Mari bersama memakmurkan masjid dan membangun generasi yang beriman serta berilmu.',
 
     primaryButton: {
       label: 'Lihat Agenda & Kegiatan',

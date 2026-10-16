@@ -24,8 +24,10 @@ export default function Beranda() {
             </div>
 
             <h1>
-              {hero.title} &amp;{" "}
-              <span>Keunggulan Teknologi</span>
+            Pusat Ibadah,
+            Pembinaan, dan
+            Pengabdian<br />
+              <span className="font-sm">Mahasiswa Fakultas Teknik Universitas Negeri Semarang.</span>
             </h1>
 
             <p>{hero.description}</p>

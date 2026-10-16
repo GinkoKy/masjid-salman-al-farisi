@@ -1,4 +1,4 @@
-import { UsersRound, ShieldCheck } from "lucide-react";
+import { UsersRound, ShieldCheck, ThumbsUp } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 import { images } from "../data/site";
 
@@ -31,16 +31,6 @@ export default function StrukturOrganisasi() {
               alt="Poster struktur organisasi dari desain referensi Stitch"
             />
           </div>
-          <div className="notice">
-            <ShieldCheck size={20} />
-            <p>
-              <strong>Periksa data sebelum dipublikasikan.</strong>
-              <br />
-              Pastikan nama, jabatan, foto, dan masa kepengurusan sesuai dengan
-              data resmi dari pengurus. Poster pada desain referensi merupakan
-              aset mockup.
-            </p>
-          </div>
           <div className="values-grid">
             <article>
               <UsersRound />
@@ -55,6 +45,13 @@ export default function StrukturOrganisasi() {
               <h3>Amanah</h3>
               <p>
                 Setiap peran dijalankan dengan tanggung jawab dan keterbukaan.
+              </p>
+            </article>
+            <article>
+              <ThumbsUp />
+              <h3>Ramah</h3>
+              <p>
+                Melayani keperluan jamaah dan masyarakat dengan sikap hangat dan bersahabat.
               </p>
             </article>
           </div>

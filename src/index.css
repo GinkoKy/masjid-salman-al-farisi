@@ -206,6 +206,9 @@ blockquote {
 }
 .hero-copy h1 span {
   color: var(--cyan);
+  font-size: 25px;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
 }
 .hero-copy > p {
   max-width: 660px;

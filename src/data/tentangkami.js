@@ -19,7 +19,7 @@ export const tentangKamiData = {
   },
 
   vision: {
-    label: "✦ VISI KELEMBAGAAN",
+    label: "✦ VISI ORGANISASI",
     text: '"Menjadikan Masjid Salman Al Farisi FT UNNES sebagai pusat peradaban Islam yang unggul dalam membina mahasiswa teknik yang beriman, berilmu, berakhlak mulia, dan berkontribusi nyata bagi masyarakat."',
     footer: "Landasan Filosofis Takmir",
     badge: "FT UNNES",
