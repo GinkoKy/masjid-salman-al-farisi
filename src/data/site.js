@@ -59,6 +59,11 @@ export const activities = [
     image: sambutanDekanat,
   },
   {
+    title: "Pembacaan Tata Tertib dan Koordinasi Takmir Muda",
+    category: "KEPENGURUSAN",
+    image: pembacaanTataTertib,
+  },
+  {
     title: "Belajar Baca Al-Qur'an Bersama Mahasiswa Teknik",
     category: "PEMBINAAN",
     image: belajarBersama,
