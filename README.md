@@ -1,16 +1,40 @@
-# React + Vite
+# Masjid Salman Al-Farisi FT UNNES — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Implementasi React berdasarkan desain referensi Stitch yang diberikan. Navigasi dibuat multi-halaman menggunakan React Router; gaya visual mengambil palet emerald/teal, pola titik, pasangan font Newsreader + Plus Jakarta Sans, kartu tipis, dan layout responsif dari desain.
 
-Currently, two official plugins are available:
+## Menjalankan project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Untuk memeriksa build produksi:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run build
+```
 
-## Expanding the ESLint configuration
+## Halaman
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `/` — Beranda
+- `/tentang-kami` — Tentang Kami dan Misi
+- `/struktur-organisasi` — Struktur Organisasi
+- `/kegiatan` — Kegiatan & Dokumentasi
+- `/agenda` — Agenda & Program
+- `/donasi` — Infaq & Donasi
+
+## Struktur kode
+
+- `src/components/` — Navbar, Footer, heading, jadwal shalat, kartu misi, galeri, agenda.
+- `src/layouts/MainLayout.jsx` — layout yang digunakan ulang antarhalaman.
+- `src/pages/` — halaman berdasarkan route.
+- `src/data/site.js` — navigasi, teks, dan sumber gambar.
+- `src/index.css` — styling responsif.
+
+## Penting sebelum dipublikasikan
+
+- Waktu shalat yang ditampilkan pada widget adalah angka contoh dari desain mockup, bukan jadwal terverifikasi.
+- Data agenda, nama pengurus, lokasi kontak, dan kanal donasi perlu diperiksa dengan pengurus resmi.
+- Gambar menggunakan URL dari export Stitch. Pastikan gambar tersebut memang boleh digunakan untuk project dan tetap tersedia. Jika tidak, ganti dengan aset resmi di `public/images/`.
+- Tidak ada rekening/QRIS palsu yang disertakan.

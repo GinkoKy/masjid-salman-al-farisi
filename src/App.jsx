@@ -1,22 +1,26 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
+import Beranda from './pages/Beranda'
+import TentangKami from './pages/TentangKami'
+import StrukturOrganisasi from './pages/StrukturOrganisasi'
+import Kegiatan from './pages/Kegiatan'
+import Agenda from './pages/Agenda'
+import Donasi from './pages/Donasi'
+import TidakDitemukan from './pages/TidakDitemukan'
 
-function App() {
+export default function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-950 p-6">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-white">
-          Masjid Salman Al-Farisi
-        </h1>
-
-        <p className="mt-4 text-slate-300">
-          Landing Page ORMAWA FT UNNES
-        </p>
-
-        <button className="mt-6 rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-700">
-          Info & Donasi
-        </button>
-      </div>
-    </main>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Beranda />} />
+        <Route path="/tentang-kami" element={<TentangKami />} />
+        <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
+        <Route path="/kegiatan" element={<Kegiatan />} />
+        <Route path="/agenda" element={<Agenda />} />
+        <Route path="/donasi" element={<Donasi />} />
+        <Route path="/beranda" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<TidakDitemukan />} />
+      </Route>
+    </Routes>
   )
 }
-
-export default App
