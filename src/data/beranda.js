@@ -4,6 +4,7 @@ import {
   CalendarDays,
   Images,
   Landmark,
+  Laptop,
 } from 'lucide-react'
 
 export const berandaData = {
@@ -82,6 +83,14 @@ export const berandaData = {
           'Temukan informasi program dan agenda kegiatan masjid.',
         to: '/agenda',
         label: 'Jelajahi agenda',
+      },
+      {
+        icon: Laptop,
+        title: 'Program Kerja',
+        description:
+          'Temukan program kerja unggulan Masjid Salman Al-Farisi FT UNNES.',
+        to: '/program',
+        label: 'Jelajahi program',
       },
     ],
   },
