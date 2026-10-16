@@ -1,3 +1,7 @@
+import logoMasjid from '../assets/images/logo-masjid.png'
+import heroMasjid from '../assets/images/hero-masjid.jpg'
+import strukturPengurus from '../assets/images/struktur-pengurus.png'
+
 export const site = {
   name: 'Masjid Salman Al-Farisi',
   organization: 'FT UNNES',
@@ -14,9 +18,9 @@ export const navigation = [
 ]
 
 export const images = {
-  logo: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAAJnjzeOe4QBwWToM0-m85as1QOaev-242sxeyDusn8DNKV_DHvZc2WfaoScwyoUmUCWjeGrkM82v4kmT79eUczigWkfth6QkzP-lVdF0sWFWYupLZpgam0EIdqUeJw8XpvWDPDI45VyubbRqjdIyDG-IsVRsLw9hkmM-HkcCE2ea7OvrobDQIOnb8WOEHGjL3SH9SKu6aHZWNljuR-hpukZ8FBKNWVZCvvZ90SP2_IDlDK0d7f10HaslR0GPhLX3I_VQ',
-  mosque: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBc5C7c8SqXXlc4nlY2WPu3rr5Puw8nIL5YhVb1f6lTuhN8w5IEL57BKBdCxxv7ZINIAdJeXo6rEZBXJOS2k0I0XguiZXrnJZ1ICslk_E0uGvwiPhpJw_ReVwLTDJAM4Qlhfh-YFn-FXHGf4pTVSY3ds7V-S1ez3LnSox4Bt6bKpJjDPrO5wMaEhrh_-Hf6upTpLkddrp_Jp9dFZ8pZ-3cen_-Z9pBttb1smvZaMmS2TQU2AOuUuBTzeA',
-  committee: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBtQ6Dz-Z5jLBd5T-2O_A4wHIoTf0g7iNDj2a_X8Ry7KDmZhl68JrO7Nbf-db8Zo2P9hPrqlYAIlJ8GfFbhJOhFAx2iigLlDeSXK-Cfud6jyMjYFNx_TWBLGU7KP4VEO1FzbC5EojrJWtqksvLSQbvzW-w00ufJ1EB08YLLijz_X2ud7BelQN4xNmFfGv0NpHwi_jgtSq-H3eCovnqVzNFWj8fe5Vyj1ACFW9e4gidfXZXLV0L3VtuOiYetbYIpKEhGt3E',
+  logo: logoMasjid,
+  hero: heroMasjid,
+  struktur: strukturPengurus,
 }
 
 export const activities = [

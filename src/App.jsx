@@ -7,6 +7,7 @@ import Kegiatan from './pages/Kegiatan'
 import Agenda from './pages/Agenda'
 import Donasi from './pages/Donasi'
 import TidakDitemukan from './pages/TidakDitemukan'
+import { images } from './data/site'
 
 export default function App() {
   return (

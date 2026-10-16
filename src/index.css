@@ -1174,3 +1174,255 @@ blockquote {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Grid misi */
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Kartu misi */
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 314px;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e1e7e5;
+  border-radius: 11px;
+  box-shadow: none;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-3px);
+  border-color: #b8d8d5;
+  box-shadow: 0 8px 24px rgb(15 57 61 / 7%);
+}
+
+/* Baris nomor dan ikon */
+.mission-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.mission-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 31px;
+  padding: 0 8px;
+  color: #35d9e8;
+  background: #0b3037;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: monospace;
+}
+
+.mission-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8da0bc;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Judul dan deskripsi */
+.mission-card h3 {
+  margin: 0 0 17px;
+  color: #102f3b;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.mission-card p {
+  margin: 0;
+  color: #536b84;
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+
+/* Footer kartu */
+.mission-card-footer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: auto;
+  padding-top: 25px;
+  border-top: 1px solid #e3e8e6;
+  margin-top: 22px;
+}
+
+.mission-pillar {
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 10px;
+  color: #168b9e;
+  background: #f8fafb;
+  border: 1px solid #e0e7e9;
+  border-radius: 3px;
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .mission-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .mission-card {
+    padding: 26px;
+  }
+}
+
+/* HP */
+@media (max-width: 640px) {
+  .mission-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .mission-card {
+    min-height: 0;
+    padding: 24px;
+  }
+
+  .mission-card h3 {
+    font-size: 19px;
+  }
+
+  .mission-card p {
+    font-size: 14.5px;
+  }
+}
+
+
+/* Kartu misi nomor 7: melebar satu baris */
+.mission-card-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  grid-template-rows: auto;
+  align-items: center;
+  column-gap: 20px;
+  min-height: 136px;
+  padding: 26px 36px;
+  border-color: #9ade62;
+  border-radius: 11px;
+  box-shadow: none;
+}
+
+.mission-card-featured:hover {
+  border-color: #82cf45;
+}
+
+/* Nomor 07 di sebelah kiri */
+.mission-card-featured .mission-card-top {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  align-self: center;
+}
+
+.mission-card-featured .mission-number {
+  min-width: 48px;
+  height: 36px;
+  color: #ffffff;
+  background: #198d98;
+  font-size: 14px;
+}
+
+/* Judul dan deskripsi di tengah */
+.mission-card-featured .mission-card-content {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.mission-card-featured .mission-card-content h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.mission-card-featured .mission-card-content p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Label pilar di sebelah kanan */
+.mission-card-featured .mission-card-footer {
+  grid-column: 3;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+  border: none;
+  align-self: center;
+}
+
+.mission-card-featured .mission-pillar {
+  padding: 8px 15px;
+  color: #183b28;
+  background: #edf8df;
+  border-color: #d5edb8;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/* Responsif untuk tablet dan HP */
+@media (max-width: 1024px) {
+  .mission-card-featured {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .mission-card-featured .mission-card-footer {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mission-card-featured {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 14px;
+    padding: 22px 18px;
+    min-height: 0;
+  }
+
+  .mission-card-featured .mission-number {
+    min-width: 38px;
+    height: 32px;
+  }
+
+  .mission-card-featured .mission-card-content h3 {
+    font-size: 18px;
+  }
+
+  .mission-card-featured .mission-card-content p {
+    font-size: 12px;
+  }
+
+  .mission-card-featured .mission-pillar {
+    white-space: normal;
+  }
+}
