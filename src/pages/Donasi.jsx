@@ -1,4 +1,4 @@
-import { HandCoins, ShieldCheck } from "lucide-react";
+import { HandCoins, UsersRound } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
 
 export default function Donasi() {
@@ -36,17 +36,13 @@ export default function Donasi() {
               <HandCoins size={25} />
             </div>
             <h2>Informasi Donasi Resmi</h2>
-            <p>
-              Tambahkan QRIS, rekening, dan narahubung resmi setelah disetujui
-              pengurus.
-            </p>
-            <div className="notice">
-              <ShieldCheck size={18} />
-              <p>
-                Jangan gunakan informasi pembayaran contoh untuk transaksi
-                nyata.
-              </p>
-            </div>
+            <p>Contact Person</p>
+            <a href="https://wa.me/6285600201973">
+              <div className="notice">
+                <UsersRound size={18} />
+                <p>+62 856 0020 1973 ( Fathiin )</p>
+              </div>
+            </a>
           </aside>
         </div>
       </section>
